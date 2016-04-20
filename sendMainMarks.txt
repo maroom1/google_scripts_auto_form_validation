@@ -1,0 +1,213 @@
+// This constant is written in column C for rows for which an email
+// has been sent successfully.
+//for the quiz created for java lab
+var EMAIL_SENT = "EMAIL_SENT";
+
+function sendMainMarks() {
+  var sheet = SpreadsheetApp.getActiveSheet();
+  var startRow = 2;  // First row of data to process
+  var numRows = 2;   // Number of rows to process
+  // Fetch the range of cells C2:AV41
+  var dataRange = sheet.getRange(startRow, 3, numRows, 47)
+  // Fetch values for each row in the Range.
+var d6='"john".equals("john")';
+var d7='public static void main(String args[])';
+var d8='String temp [] = {"a", "b", "c"};';
+var d9='void returns no data type.';
+var d10='all of the above';
+var d11=true;
+var d12='Objects do not permit encapsulation';
+var d13='arr.length';
+var d14='obtains memory for a new variable';
+var d15='java';
+var d17='translates java source code to byte code';
+var d18='Package, Import, Class';
+var d19='platform independent';
+var d20='a new class is derived from an existing class';
+var d21='object';
+var d22=9.0;
+var d23='equals()';
+var d24=true;
+var d25=true;
+var d26=false;
+var d27="jvm or java virtual machine";
+var d28="java architecture";
+var d29='javac';
+var d30=4.0;
+var d31='compile error';
+var d32='An instance of interface can be created.';
+var d33="adds two Arralist objects";
+
+var d34='Interface';
+var d35='None of the above';
+var d36='entrySet()';
+var d37='put()';
+var d38='apple,peach,guava';
+var d39="system.out.ptintln(h.values());";
+var d40="system.out.ptintln(h.entrySet());";
+var d41='None';
+var d42='Iterator()';
+var d43=true;
+var d44=1.0;
+var d45=false;
+var d46='No';
+  
+  
+  var data = dataRange.getValues();
+  for (var i = 0; i < data.length; ++i) {
+    var c=0; var s="";
+	var row = data[i];
+    var seatnum = row[0];  // First column seat num
+	var name=row[1];
+	var id=row[2];
+	var emailAddress=row[3]
+var val6=row[4];
+var val7=row[5];
+var val8=row[6];
+var val9=row[7];
+var val10=row[8];
+var val11=row[9];
+var val12=row[10];
+var val13=row[11];
+var val14=row[12];
+var val15=row[13];
+
+var val17=row[15];
+var val18=row[16];
+var val19=row[17];
+var val20=row[18];
+var val21=row[19];
+var val22=row[20];
+var val23=row[21];
+var val24=row[22];
+var val25=row[23];
+var val26=row[24];
+var val27=row[25];
+var val28=row[26];
+var val29=row[27];
+var val30=row[28];
+var val31=row[29];
+var val32=row[30];
+var val33=row[31];
+var val34=row[32];
+var val35=row[33];
+var val36=row[34];
+var val37=row[35];
+var val38=row[36];
+var val39=row[37];
+var val40=row[38];
+var val41=row[39];
+var val42=row[40];
+var val43=row[41];
+var val44=row[42];
+var val45=row[43];
+var val46=row[44];
+var emailSent=row[45];
+
+      if(d6==val6){
+      c=c+2;
+	  s=s+"1 ";}
+    if(d7==val7){
+      c=c+2;s=s+" 2  ";}
+    if(d8==val8){
+      c=c+2;s=s+"  3 ";}
+    if(d9==val9){
+      c=c+2;s=s+" 4 ";}
+    if(d10==val10){
+      c=c+2;s=s+"  5 ";}
+if(d11==val11){
+c=c+2;s=s+"  6 ";}
+if(d12==val12){
+c=c+2;s=s+"  7 ";}
+if(d13==val13){
+c=c+2;s=s+"  8 ";}
+if(d14==val14){
+c=c+2;s=s+" 9  ";}
+if(d15==val15){
+c=c+2;s=s+" 10  ";}
+if(d17==val17){
+c=c+2;s=s+" 11  ";}
+if(d18==val18){
+c=c+2;s=s+" 12  ";}
+if(d19==val19){
+c=c+2;s=s+" 13  ";}
+if(d20==val20){
+c=c+2;s=s+" 14  ";}
+if(d21==val21){
+c=c+2;s=s+" 15  ";}
+if(d22==val22){
+c=c+2;s=s+" 16  ";}
+if(d23==val23){
+c=c+2;s=s+" 17  ";}
+if(d24==val24){
+c=c+2;s=s+" 18  ";}
+if(d25==val25){
+c=c+2;s=s+" 19  ";}
+if(d26==val26){
+c=c+2;s=s+"  20 ";}
+if(d27==val27){
+c=c+2;s=s+" 21  ";}
+if(d28==val28){
+c=c+2;s=s+" 22  ";}
+if(d29==val29){
+c=c+2;s=s+" 23  ";}
+if(d30==val30){
+c=c+2;s=s+" 24  ";}
+if(d31==val31){
+c=c+2;s=s+" 25  ";}
+if(d32==val32){
+c=c+2;s=s+" 26  ";}
+if(d33==val33){
+c=c+2;s=s+" 27  ";}else{
+  s=s+"27 --- "+d33+" "+val33;
+  
+  }
+if(d34==val34){
+c=c+2;s=s+" 28  ";}
+if(d35==val35){
+c=c+2;s=s+" 29  ";}
+if(d36==val36){
+c=c+2;s=s+" 30  ";}
+if(d37==val37){
+c=c+2;s=s+" 31  ";}
+if(d38==val38){
+c=c+2;s=s+" 32  ";}else{
+  s=s+"32 wrong "+d38+" "+val38;
+  
+  }
+    
+    
+if(d39==val39){
+  c=c+2;s=s+" 33  ";}else{
+  s=s+"33 --- "+d39+" "+val39;
+  
+  }
+if(d40==val40){
+c=c+2;s=s+" 34  ";}
+if(d41==val41){
+c=c+2;s=s+" 35  ";}
+if(d42==val42){
+c=c+2;s=s+" 36  ";}
+if(d43==val43){
+c=c+2;s=s+" 37  ";}
+if(d44==val44){
+c=c+2;s=s+" 38  ";}
+if(d45==val45){
+c=c+2;s=s+" 39  ";}
+if(d46==val46){
+  c=c+2;s=s+" 40  ";}
+  
+    
+    
+    
+    if (emailSent != EMAIL_SENT) {  // Prevents sending duplicates
+      var subject = "Final exam report for "+name+" #"+seatnum;
+      var message="Congratulations,you achieved marks of total "+c+"\n\n\n\nCorrect answers are"+s+"\n\n\n\n\n\n Thank you and all the best";
+      MailApp.sendEmail(emailAddress, subject, message);
+      sheet.getRange(startRow + i, 48).setValue(EMAIL_SENT);
+      // Make sure the cell is updated right away in case the script is interrupted
+      SpreadsheetApp.flush();
+    }
+    
+    }
+  }

@@ -1,0 +1,45 @@
+function onFormSubmit(e) {
+
+  var timestamp = e.values[0];
+
+  var yourName = e.values[1];
+
+  var toAddress = e.values[2];
+
+  var eventName = e.values[3];
+
+  var visitDate = e.values[4];
+
+  var visitComments = toAddress+eventName;
+
+  var subject = "CAP Confirmation - " + eventName + " " + visitDate;
+
+  var emailBody = "Thank you for your Club Ambassador Program report submitted on " + timestamp +
+
+      "\n\nThe details you entered were as follows: " +
+
+      "\nYour Name: " + yourName +
+
+      "\nYour Email: " + toAddress +
+
+      "\nClub or Event Name: " + eventName +
+
+      "\nVisit Date: " + visitDate +
+
+      "\nVisit Comments: " + visitComments;
+
+  var htmlBody = "Thank you for your <b>Club Ambassador Program</b> report submitted on <i>" + timestamp +
+
+      "</i><br/>&nbsp;<br/>The details you entered were as follows: " +
+
+      "<br/><font color=\"red\">Your Name:</font> " + yourName +
+
+      "<br/>Your Email: " + toAddress;
+
+  var optAdvancedArgs = {name: "Club Ambassador Program", htmlBody: htmlBody};
+
+  MailApp.sendEmail(visitDate, subject,
+
+                   emailBody, optAdvancedArgs);
+
+}
